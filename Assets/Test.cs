@@ -36,6 +36,42 @@ public class Test : MonoBehaviour
         int n2 = 9;
         answer = n1 + n2;
         Debug.Log(answer);
+
+        int herbNum = 1;
+        if (herbNum == 1) {
+            Debug.Log("HPが50回復");
+        }
+
+        int hp = 180;
+        if (hp <= 50) {
+            Debug.Log("逃走!");
+        } else if (hp >= 200) {
+            Debug.Log("攻撃!");
+        } else {
+            Debug.Log("防御!");
+        }
+
+        for (int i = 0; i < 5; i++) {
+            Debug.Log(i);
+        }
+
+        for (int i = 0; i < 10; i += 2) {
+            Debug.Log(i);
+        }
+
+        for (int i = 3; i <= 5; i++) {
+            Debug.Log(i);
+        }
+
+        for (int i = 3; i >= 0; i--) {
+            Debug.Log(i);
+        }
+
+        int sum = 0;
+        for(int i = 1; i <= 10; i++) {
+            sum += 1;
+        }
+        Debug.Log(sum);
     }
 
     // Update is called once per frame
