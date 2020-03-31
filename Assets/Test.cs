@@ -4,6 +4,15 @@ using UnityEngine;
 
 public class Test : MonoBehaviour
 {
+    void callName(string name) {
+        Debug.Log("Hello, " + name);
+    }
+
+    int add(int a, int b) {
+        int c = a + b;
+        return c;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -94,6 +103,12 @@ public class Test : MonoBehaviour
         //int average = secondSum / point.Length;
         float average = 1.0f * secondSum / point.Length;
         Debug.Log(average);
+
+        callName("Tom");
+
+        int secondAnswer;
+        secondAnswer = add(3, 4);
+        Debug.Log(answer);
     }
 
     // Update is called once per frame
